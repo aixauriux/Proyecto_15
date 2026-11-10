@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaf6ff;
+    color: #345b78;
+}
+
+/* Contenedor principal */
+
+.contenedor {
+    width: 90%;
+    max-width: 450px;
+    margin: 70px auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 25px;
+    color: #527fa3;
+    margin-bottom: 25px;
+}
+
+/* Barra de progreso */
+
+.informacion {
+    margin-bottom: 15px;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #d5eafa;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #91c5e8;
+    border-radius: 10px;
+}
+
+progress::-moz-progress-bar {
+    background-color: #91c5e8;
+    border-radius: 10px;
+}
+
+.informacion p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin: 8px 0;
+    color: #527fa3;
+}
+
+/* Tarjeta */
+
+.tarjeta {
+    height: 250px;
+    background-color: #f8fcff;
+    border: 2px solid #b9daf0;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    cursor: pointer;
+}
+
+.tarjeta:hover {
+    background-color: #edf8ff;
+}
+
+.tarjeta:focus-visible {
+    outline: 3px solid #527fa3;
+    outline-offset: 3px;
+}
+
+.tarjeta p {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #426b8c;
+}
+
+/* Botones */
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    background-color: #d5eafa;
+    padding: 12px 8px;
+    border-radius: 0 0 10px 10px;
+}
+
+button {
+    border: none;
+    background: none;
+    color: #426b8c;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 5px;
+}
+
+button:hover {
+    color: #24577e;
+    background-color: #b9daf0;
+    border-radius: 5px;
+}
+
+button:disabled {
+    color: #9ab4c7;
+    cursor: not-allowed;
+    background: none;
+}
+
+/* Responsive */
+
+@media (max-width: 450px) {
+
+    .contenedor {
+        width: 95%;
+        margin: 40px auto;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .tarjeta p {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 11px;
+    }
+}
